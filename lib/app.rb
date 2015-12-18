@@ -100,7 +100,10 @@ def print_brand_data(brand_data)
   end
 end
 
-def print_report
+def print_report(opts = {})
+
+  $stdout.reopen(File.join(File.dirname(__FILE__), '../lib/report.txt'), 'w') if opts[:file]
+
   # Initialize products and brand data hashes
   products_hash = setup_files
   brand_data = {}
