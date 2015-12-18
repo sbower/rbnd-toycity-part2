@@ -22,10 +22,10 @@ def print_report
 
   # Print "Sales Report" in ascii art
   puts %{
-   ___    __    __    ____  ___    ____  ____  ____  _____  ____  ____
-  / __)  /__\\  (  )  ( ___)/ __)  (  _ \\( ___)(  _ \\(  _  )(  _ \\(_  _)
-  \\__ \\ /(__)\\  )(__  )__) \\__ \\   )   / )__)  )___/ )(_)(  )   /  )(
-  (___/(__)(__)(____)(____)(___/  (_)\\_)(____)(__)  (_____)(_)\\_) (__)
+ ___    __    __    ____  ___    ____  ____  ____  _____  ____  ____
+/ __)  /__\\  (  )  ( ___)/ __)  (  _ \\( ___)(  _ \\(  _  )(  _ \\(_  _)
+\\__ \\ /(__)\\  )(__  )__) \\__ \\   )   / )__)  )___/ )(_)(  )   /  )(
+(___/(__)(__)(____)(____)(___/  (_)\\_)(____)(__)  (_____)(_)\\_) (__)
   }
 
   # Print today's date
@@ -49,7 +49,7 @@ def print_report
   	puts DEMARK
 
   	# Print the retail price of the toy
-  	puts "Full Price: " + toy["full-price"]
+  	puts "Full Price: #{toy["full-price"]}"
 
   	sum_purchase_price = 0
   	sum_discount = 0
@@ -62,13 +62,13 @@ def print_report
   	end
 
   	# Calculate and print the total number of purchases
-  	puts "Number of Purchases: " + num_purchases.to_s
+  	puts "Number of Purchases: #{num_purchases.to_s}"
   	# Calcalate and print the total amount of sales
-  	puts "Total Sales Amount: $" + sum_purchase_price.to_s
+  	puts "Total Sales Amount: $#{sum_purchase_price.to_s}"
   	# Calculate and print the average price the toy sold for
-  	puts "Average Sale Price: $" + (sum_purchase_price / num_purchases).to_s
+  	puts "Average Sale Price: $#{(sum_purchase_price / num_purchases).to_s}"
   	# Calculate and print the average discount based off the average sales price
-  	puts "Average Discount Percent: " + ((1 - (sum_discount / num_purchases)) * 100).round(2).to_s + "%"
+  	puts "Average Discount Percent: #{((sum_discount / num_purchases) * 100).round(2).to_s}%"
   	puts
 
   	update_brand_data toy["brand"], toy["full-price"], sum_purchase_price, toy["stock"], brand_data
@@ -89,11 +89,11 @@ def print_report
   		puts brand_name
   		puts DEMARK
       # Count and print the number of the brand's toys we stock
-  		puts "Number of Items in Stock: " + data[:stock].to_s
+  		puts "Number of Products: #{data[:count].to_s}"
       # Calculate and print the average price of the brand's toys
-  		puts "Average Retail Price: $" + (data[:sum_price] / data[:count]).round(2).to_s
+  		puts "Average Retail Price: $#{(data[:sum_price] / data[:count]).round(2).to_s}"
       # Calculate and print the total sales volume of all the brand's toys combined
-  		puts "Total Sales Volume: $" + data[:sales].round(2).to_s
+  		puts "Total Sales Volume: $#{data[:sales].round(2).to_s}"
   		puts
   end
 end
