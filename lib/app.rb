@@ -70,7 +70,7 @@ def print_product_data(num_purchases, sum_purchase_price, sum_discount, toy)
   # Calculate and print the average price the toy sold for
   puts "Average Sale Price: $#{(sum_purchase_price / num_purchases).to_s}"
   # Calculate and print the average discount based off the average sales price
-  puts "Average Discount Percent: #{((sum_discount / num_purchases) * 100).round(2).to_s}%"
+  puts "Average Discount Percent: #{((1 - (sum_discount / num_purchases)) * 100).round(2).to_s}%"
   puts
 end
 
@@ -91,7 +91,7 @@ def print_brand_data(brand_data)
       puts brand_name
       puts DEMARK
       # Count and print the number of the brand's toys we stock
-      puts "Number of Products: #{data[:count].to_s}"
+      puts "Number of Items in Stock: #{data[:stock].to_s}"
       # Calculate and print the average price of the brand's toys
       puts "Average Retail Price: $#{(data[:sum_price] / data[:count]).round(2).to_s}"
       # Calculate and print the total sales volume of all the brand's toys combined
@@ -109,7 +109,7 @@ def print_report(opts = {})
   brand_data = {}
 
   # Print report header
-  print_header
+  print_header()
 
   # For each product in the data set:
   products_hash["items"].each do |toy|
@@ -120,7 +120,7 @@ def print_report(opts = {})
     print_product_data(num_purchases, sum_purchase_price, sum_discount, toy)
 
     # Update our brands hash with the calcuated product data
-    update_brand_data toy["brand"], toy["full-price"], sum_purchase_price, toy["stock"], brand_data
+    update_brand_data(toy["brand"], toy["full-price"], sum_purchase_price, toy["stock"], brand_data)
   end
 
   # Print the brands ascii art header

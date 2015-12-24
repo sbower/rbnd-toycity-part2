@@ -5,7 +5,7 @@
 (___/(__)(__)(____)(____)(___/  (_)\_)(____)(__)  (_____)(_)\_) (__)
   
 
-Report Date: 12/17/2015
+Report Date: 12/23/2015
                      _            _       
                     | |          | |      
  _ __  _ __ ___   __| |_   _  ___| |_ ___ 
@@ -21,7 +21,7 @@ Full Price: 22.99
 Number of Purchases: 2
 Total Sales Amount: $36.98
 Average Sale Price: $18.49
-Average Discount Percent: 80.43%
+Average Discount Percent: 19.57%
 
 Nano Block Empire State Building
 *************************
@@ -29,7 +29,7 @@ Full Price: 49.99
 Number of Purchases: 2
 Total Sales Amount: $68.98
 Average Sale Price: $34.49
-Average Discount Percent: 68.99%
+Average Discount Percent: 31.01%
 
 LEGO Firehouse Headquarters
 *************************
@@ -37,7 +37,7 @@ Full Price: 199.99
 Number of Purchases: 2
 Total Sales Amount: $379.98
 Average Sale Price: $189.99
-Average Discount Percent: 95.0%
+Average Discount Percent: 5.0%
 
  _                         _     
 | |                       | |    
@@ -48,13 +48,13 @@ Average Discount Percent: 95.0%
 
 LEGO
 *************************
-Number of Products: 2
+Number of Items in Stock: 55
 Average Retail Price: $111.49
 Total Sales Volume: $416.96
 
 Nano Blocks
 *************************
-Number of Products: 1
+Number of Items in Stock: 12
 Average Retail Price: $49.99
 Total Sales Volume: $68.98
 
