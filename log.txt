@@ -1,0 +1,41 @@
+commit e2ca722d498808d92c48fd35b478546951bcea18
+Author: sbower <shawn.bower@gmail.com>
+Date:   Wed Dec 23 23:31:53 2015 -0500
+
+    fixes per project review
+
+commit 4b100898fb710bc84e1a7e6eaf69cb2d5f8a40e8
+Author: sbower <shawn.bower@gmail.com>
+Date:   Thu Dec 17 22:30:39 2015 -0500
+
+    adding a simple options parser
+
+commit 5afc2c25276ce43a56903c3f4388cf2f13b87289
+Author: sbower <shawn.bower@gmail.com>
+Date:   Thu Dec 17 22:16:48 2015 -0500
+
+    modularizing and stuff
+
+commit b17f628db25a8cb52b6075638d2fdf0f7dc005a9
+Author: sbower <shawn.bower@gmail.com>
+Date:   Thu Dec 17 21:55:01 2015 -0500
+
+    couple small tweaks
+
+commit 71632987bd5666761f3e32875fa2645004926ba3
+Author: sbower <shawn.bower@gmail.com>
+Date:   Thu Dec 17 21:46:17 2015 -0500
+
+    ading calling script
+
+commit cb7c1cc8fe2988495a33efab1c56cd78f12ca89e
+Author: sbower <shawn.bower@gmail.com>
+Date:   Thu Dec 17 21:37:41 2015 -0500
+
+    adding code to print report
+
+commit 9e73617d19ab6048f64c06c81b3777cce52bd841
+Author: sbower <shawn.bower@gmail.com>
+Date:   Thu Dec 17 21:11:46 2015 -0500
+
+    first commit
