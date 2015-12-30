@@ -1,11 +1,13 @@
 require 'json'
 
-DEMARK = "*" * 25
+Def demark
+  puts  "*" * 25
+end
 
 def setup_files
   path = File.join(File.dirname(__FILE__), '../data/products.json')
   file = File.read(path)
-  products_hash = JSON.parse(file)
+  JSON.parse(file)
 end
 
 def update_brand_data(brand_name, sum_retail_price, sum_purchase_price, stock, brand_data)
@@ -59,7 +61,7 @@ end
 def print_product_data(num_purchases, sum_purchase_price, sum_discount, toy)
   # Print the name of the toy
   puts toy["title"]
-  puts DEMARK
+  demark()
 
   # Print the retail price of the toy
   puts "Full Price: #{toy["full-price"]}"
@@ -89,7 +91,7 @@ def print_brand_data(brand_data)
   brand_data.each do |brand_name, data|
       # Print the name of the brand
       puts brand_name
-      puts DEMARK
+      demark()
       # Count and print the number of the brand's toys we stock
       puts "Number of Items in Stock: #{data[:stock].to_s}"
       # Calculate and print the average price of the brand's toys
